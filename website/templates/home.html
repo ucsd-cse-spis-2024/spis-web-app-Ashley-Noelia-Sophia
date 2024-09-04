@@ -2,8 +2,12 @@
 {% block title %}Home{% endblock title %}
 
 {% block content%}
+<br />
 <h1 align="center">Home</h1>
-<h3>Cooking Conversions</h3>
+<br />
+<br />
+<h2>Cooking Conversions</h2>
+<br />
 <h5>1 teaspoon = 6 fluid ounces</h5>
 <h5>1 fluid ounce = 2 tablespoons</h5>
 <h5>1 cup = 8 fluid ounces</h5>
@@ -11,42 +15,21 @@
 <h5>1 quart = 2 pints</h5>
 <h5>1 gallon = 4 quarts</h5>
 
-<h1 align="center">Recipes</h1>
-<h3>Breakfast</h3>
-<u1 class="list-group list-group-flush" id="notes">
-    {% for note in user.notes%}
-    <li class="list-group-item">{{ note.data }}
-        <button type="button" class="close" onClick="deleteNote({{note.id}})">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </li>
-    {% endfor %}
-</u1>
-<form method="POST">
-    <textarea name="note" id ="note" class="form-control"></textarea>
-    <br />
-    <div align="center">
-        <button type="submit" class="btn btn-primary">Add Breakfast</button>
-    </div>
-</form>
-<h3>Lunch</h3>
-<u1 class="list-group list-group-flush" id="notes">
-    {% for note in user.notes%}
-    <li class="list-group-item">{{ note.data }}
-        <button type="button" class="close" onClick="deleteNote({{note.id}})">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </li>
-    {% endfor %}
-</u1>
-<form method="POST">
-    <textarea name="note" id ="note" class="form-control"></textarea>
-    <br />
-    <div align="center">
-        <button type="submit" class="btn btn-primary">Add Recipe</button>
-    </div>
-</form>
-<h3>Dinner</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Pyramid</title>
+</head>
+<body>
+    <img src="addImage/FoodPyramid.png" alt="Food Pyramid" width="100">
+</body>
+</html>
+
+<br />
+<h2 align="center">Recipes</h2>
+<br />
 <u1 class="list-group list-group-flush" id="notes">
     {% for note in user.notes%}
     <li class="list-group-item">{{ note.data }}
@@ -63,38 +46,6 @@
         <button type="submit" class="btn btn-primary">Add Recipe</button>
     </div>
 </form>
-<h3>Dessert</h3>
-<u1 class="list-group list-group-flush" id="notes">
-    {% for note in user.notes%}
-    <li class="list-group-item">{{ note.data }}
-        <button type="button" class="close" onClick="deleteNote({{note.id}})">
-            <span aria-hideen="true">&times;</span>
-        </button>
-    </li>
-    {% endfor %}
-</u1>
-<form method="POST">
-    <textarea name="note" id ="note" class="form-control"></textarea>
-    <br />
-    <div align="center">
-        <button type="submit" class="btn btn-primary">Add Recipe</button>
-    </div>
-</form>
-<h3>Snacks</h3>
-<u1 class="list-group list-group-flush" id="notes">
-    {% for note in user.notes%}
-    <li class="list-group-item">{{ note.data }}
-        <button type="button" class="close" onClick="deleteNote({{note.id}})">
-            <span aria-hideen="true">&times;</span>
-        </button>
-    </li>
-    {% endfor %}
-</u1>
-<form method="POST">
-    <textarea name="note" id ="note" class="form-control"></textarea>
-    <br />
-    <div align="center">
-        <button type="submit" class="btn btn-primary">Add Recipe</button>
-    </div>
-</form>
+
+
 {% endblock %}

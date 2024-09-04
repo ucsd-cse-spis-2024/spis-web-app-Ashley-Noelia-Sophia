@@ -8,17 +8,15 @@ views = Blueprint('views', __name__) #URLs are defined here #Blueprint is define
 
 @views.route('/', methods=['GET', 'POST']) #we can type in slash to navigate the website
 @login_required
+
 def home():
     if request.method == 'POST':
         note = request.form.get('note') #might need to change to recipe
-
-        if len(note) < 1:
-            flash('Note is too short!', category ='error')
-        else:
-            new_note = Note(data=note, user_id=current_user.id) #note or recipe?
-            db.session.add(new_note)
-            db.session.commit()
-            flash('Note added!', category = 'success')
+        #if len(note) >= 0:
+        new_note = Note(data=note, user_id=current_user.id) #note or recipe?
+        db.session.add(new_note)
+        db.session.commit()
+        flash('Recipe added!', category = 'success')
     return render_template("home.html", user=current_user)
 
 @views.route('/delete-note', methods=['POST'])

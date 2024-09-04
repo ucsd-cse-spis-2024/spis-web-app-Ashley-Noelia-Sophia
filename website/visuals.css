@@ -1,0 +1,65 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color:rgb(143, 82, 88);
+    background-image: url(images/Spis\ \(3\).png);
+
+
+}
+
+.container {
+    margin-left:auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+header {
+    height: 118px;
+    text-align: center;
+    .resize 
+        width: 118px;
+        height: auto;
+
+    
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.256);
+    height: 40px;
+}
+
+main {
+    height: 400px;
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 240px;
+    padding-right:240px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.486);
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-bottom: 50px;
+}
+
+footer p {
+    font-size: 15px; 
+    text-align: center;
+    color: rgb(30, 30, 30);
+}
+
+h1 {
+    font-size:50px;
+    color:burlywood;
+    font-family: American Typewriter, serif;
+
+}
+
+p {
+    font-size:18px;
+    color:sienna;
+    font-family: American Typewriter, serif;
+}
