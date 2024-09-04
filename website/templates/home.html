@@ -3,15 +3,21 @@
 
 {% block content%}
 <h1 align="center">Home</h1>
-<h3>Conversions</h3>
-<h5>1 cup = </h5>
+<h3>Cooking Conversions</h3>
+<h5>1 teaspoon = 6 fluid ounces</h5>
+<h5>1 fluid ounce = 2 tablespoons</h5>
+<h5>1 cup = 8 fluid ounces</h5>
+<h5>1 pint = 2 cups</h5>
+<h5>1 quart = 2 pints</h5>
+<h5>1 gallon = 4 quarts</h5>
+
 <h1 align="center">Recipes</h1>
 <h3>Breakfast</h3>
 <u1 class="list-group list-group-flush" id="notes">
     {% for note in user.notes%}
     <li class="list-group-item">{{ note.data }}
         <button type="button" class="close" onClick="deleteNote({{note.id}})">
-            <span aria-hideen="true">&times;</span>
+            <span aria-hidden="true">&times;</span>
         </button>
     </li>
     {% endfor %}
@@ -20,7 +26,7 @@
     <textarea name="note" id ="note" class="form-control"></textarea>
     <br />
     <div align="center">
-        <button type="submit" class="btn btn-primary">Add Recipe</button>
+        <button type="submit" class="btn btn-primary">Add Breakfast</button>
     </div>
 </form>
 <h3>Lunch</h3>
@@ -28,7 +34,7 @@
     {% for note in user.notes%}
     <li class="list-group-item">{{ note.data }}
         <button type="button" class="close" onClick="deleteNote({{note.id}})">
-            <span aria-hideen="true">&times;</span>
+            <span aria-hidden="true">&times;</span>
         </button>
     </li>
     {% endfor %}
@@ -45,7 +51,7 @@
     {% for note in user.notes%}
     <li class="list-group-item">{{ note.data }}
         <button type="button" class="close" onClick="deleteNote({{note.id}})">
-            <span aria-hideen="true">&times;</span>
+            <span aria-hidden="true">&times;</span>
         </button>
     </li>
     {% endfor %}
