@@ -3,7 +3,78 @@
 
 {% block content%}
 <h1 align="center">Home</h1>
+<h3>Conversions</h3>
+<h5>1 cup = </h5>
 <h1 align="center">Recipes</h1>
+<h3>Breakfast</h3>
+<u1 class="list-group list-group-flush" id="notes">
+    {% for note in user.notes%}
+    <li class="list-group-item">{{ note.data }}
+        <button type="button" class="close" onClick="deleteNote({{note.id}})">
+            <span aria-hideen="true">&times;</span>
+        </button>
+    </li>
+    {% endfor %}
+</u1>
+<form method="POST">
+    <textarea name="note" id ="note" class="form-control"></textarea>
+    <br />
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Add Recipe</button>
+    </div>
+</form>
+<h3>Lunch</h3>
+<u1 class="list-group list-group-flush" id="notes">
+    {% for note in user.notes%}
+    <li class="list-group-item">{{ note.data }}
+        <button type="button" class="close" onClick="deleteNote({{note.id}})">
+            <span aria-hideen="true">&times;</span>
+        </button>
+    </li>
+    {% endfor %}
+</u1>
+<form method="POST">
+    <textarea name="note" id ="note" class="form-control"></textarea>
+    <br />
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Add Recipe</button>
+    </div>
+</form>
+<h3>Dinner</h3>
+<u1 class="list-group list-group-flush" id="notes">
+    {% for note in user.notes%}
+    <li class="list-group-item">{{ note.data }}
+        <button type="button" class="close" onClick="deleteNote({{note.id}})">
+            <span aria-hideen="true">&times;</span>
+        </button>
+    </li>
+    {% endfor %}
+</u1>
+<form method="POST">
+    <textarea name="note" id ="note" class="form-control"></textarea>
+    <br />
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Add Recipe</button>
+    </div>
+</form>
+<h3>Dessert</h3>
+<u1 class="list-group list-group-flush" id="notes">
+    {% for note in user.notes%}
+    <li class="list-group-item">{{ note.data }}
+        <button type="button" class="close" onClick="deleteNote({{note.id}})">
+            <span aria-hideen="true">&times;</span>
+        </button>
+    </li>
+    {% endfor %}
+</u1>
+<form method="POST">
+    <textarea name="note" id ="note" class="form-control"></textarea>
+    <br />
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Add Recipe</button>
+    </div>
+</form>
+<h3>Snacks</h3>
 <u1 class="list-group list-group-flush" id="notes">
     {% for note in user.notes%}
     <li class="list-group-item">{{ note.data }}
