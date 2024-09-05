@@ -33,20 +33,23 @@ nav {
 main {
     height: 200px;
     text-align: center;
-    .right {
-        display: block;
-        margin-left: auto;
-        width: 350px;
-      }
+
 }
     /* padding-left: 240px;
     padding-right:240px; */
 
+    .right {
+        display: block;
+        margin-left: 380px;
+        width: 340px;
+        position: relative; top: -630px; 
+        
+      }
 footer {
     background-color: rgba(0, 0, 0, 0.486);
    padding-top: 10px;
    padding-bottom: 10px;
-   margin-bottom: 50px;
+   margin-bottom: 100px;
 }
 
 footer p {
@@ -54,6 +57,7 @@ footer p {
     text-align: center;
     color: rgb(30, 30, 30);
 }
+
 
 h1 {
     font-size:100px;
@@ -82,3 +86,23 @@ h2 {
     font-family: American Typewriter, serif;
 }
  
+.box1 {
+    background-color: blanchedalmond;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 25px;
+    padding 20px;
+}
+
+ .box2 {
+    background-color: blanchedalmond;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: 800px;
+    position: relative; top: -300px; 
+} 
+

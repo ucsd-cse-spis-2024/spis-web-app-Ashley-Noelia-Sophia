@@ -3,19 +3,7 @@
 
 
 {% block content%}
-
-<h2>Cooking Conversions</h2>
-<br />
-<h5>1 teaspoon = 6 fluid ounces</h5>
-<h5>1 fluid ounce = 2 tablespoons</h5>
-<h5>1 cup = 8 fluid ounces</h5>
-<h5>1 pint = 2 cups</h5>
-<h5>1 quart = 2 pints</h5>
-<h5>1 gallon = 4 quarts</h5>
-
-
-<br />
-<h2 align="center">Recipes</h2>
+<h1 align="center">Recipes</h1>
 <br />
 <u1 class="list-group list-group-flush" id="notes">
     {% for note in user.notes%}
@@ -31,8 +19,39 @@
     <br />
     <div align="center">
         <button type="submit" class="btn btn-primary">Add Recipe</button>
+        <br />
     </div>
 </form>
+
+<br />
+<div class="box1">
+    <br />
+    <h2>Cooking Conversions</h2>
+    <br />
+    <h5>1 teaspoon = 6 fluid ounces</h5>
+    <h5>1 fluid ounce = 2 tablespoons</h5>
+    <h5>1 cup = 8 fluid ounces</h5>
+    <h5>1 pint = 2 cups</h5>
+    <h5>1 quart = 2 pints</h5>
+    <h5>1 gallon = 4 quarts</h5>
+</div>
+<div class="box2">
+    <div align="center">
+    <h2> Sweet Treats </h2>
+    <br />
+    <!-- <h5><a herf="https://sallysbakingaddiction.com/easy-cinnamon-rolls-from-scratch>Cinnamon Rolls</h5></a> -->
+    <h5> Brookies </h5>
+    <h5>Churros</h5>
+    <h5>Red Velvet Cupcakes</h5>
+    <h5>Fruit Tarts</h5>
+    <h5>Tiramisu</h5>
+    <h5>Chocolate Chip Cookies</h5>
+    </div>
+</div>
+<div>
+<img src="/static/images/food-pyramid.png" alt="food pyramid" class="right">
+<!-- <div class="box2"></div> -->
+</div>
 
 
 {% endblock %}
