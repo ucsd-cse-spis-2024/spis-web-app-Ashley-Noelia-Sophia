@@ -31,11 +31,10 @@ nav {
 }
 
 main {
-    height: 400px;
+    height: 200px;
     text-align: center;
-    padding-top: 80px;
-    padding-left: 240px;
-    padding-right:240px;
+    /* padding-left: 240px;
+    padding-right:240px; */
 }
 
 footer {
@@ -52,14 +51,28 @@ footer p {
 }
 
 h1 {
-    font-size:50px;
-    color:burlywood;
+    font-size:100px;
+    font-weight: 200;
+    color:saddlebrown;
     font-family: American Typewriter, serif;
 
 }
 
 p {
-    font-size:18px;
+    font: size 100px;
     color:sienna;
+    font-family: American Typewriter, serif;
+}
+
+h5 {
+    font-size:100px;
+    color:saddlebrown;
+    font-family: American Typewriter, serif;
+}
+
+h2 {
+    font-size:100px;
+    font-weight: 200;
+    color:saddlebrown;
     font-family: American Typewriter, serif;
 }

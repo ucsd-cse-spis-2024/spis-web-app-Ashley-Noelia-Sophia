@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name ="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Founded in 2024 at UC San Diego, SPIS Delights provides users with a place to store their recipes and find new ones created by SPIS students! ">
+        <link rel="stylesheet" href="{{ url_for('static', filename='visuals.css' )}}">
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -14,10 +16,9 @@
             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
             crossorigin="anonymous"
         />
-        <title>{% block title %}Home{% endblock %}</title>
     </head>
     <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button 
           class="navbar-toggler" 
           type="button" 
@@ -37,7 +38,6 @@
           </div>
         </div>
       </nav>
-
       {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}
         {% for category, message in messages %}
@@ -59,6 +59,16 @@
         {% endfor %}
       {% endif %}
       {% endwith %}
+      <title>SPIS Delights</title>
+      <div class="container">
+        <header>
+            <img class ="resize" src="/static/images/spisbig.png" alt="spis logo">
+        </header>
+        <main>
+            <h1>A place to store all your culinary expertise</h1>
+            <p>Recipe Joy In Every Bite.</p>
+        </main>
+    </div>
       <div class="container">{% block content%} {% endblock %}</div>
           <script
             src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -80,5 +90,8 @@
         type="text/javascript"
         src="{{ url_for('static', filename='index.js') }}"
       ></script>
+      <footer>
+        <p>UC San Diego | SPIS 2024</p>
+    </footer>
     </body>
 </html>
