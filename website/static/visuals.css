@@ -89,16 +89,17 @@ h2 {
 .box1 {
     background-color: blanchedalmond;
     width: 300px;
-    height: 300px;
+    height: 320px;
     text-align: center;
     border-radius: 25px;
     padding 20px;
+    position: relative; top: 25px; 
 }
 
  .box2 {
     background-color: blanchedalmond;
     width: 300px;
-    height: 300px;
+    height: 320px;
     text-align: center;
     border-radius: 25px;
     padding: 20px;
