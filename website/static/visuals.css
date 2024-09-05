@@ -33,9 +33,14 @@ nav {
 main {
     height: 200px;
     text-align: center;
+    .right {
+        display: block;
+        margin-left: auto;
+        width: 350px;
+      }
+}
     /* padding-left: 240px;
     padding-right:240px; */
-}
 
 footer {
     background-color: rgba(0, 0, 0, 0.486);
@@ -76,3 +81,4 @@ h2 {
     color:saddlebrown;
     font-family: American Typewriter, serif;
 }
+ 

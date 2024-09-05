@@ -62,11 +62,12 @@
       <title>SPIS Delights</title>
       <div class="container">
         <header>
-            <img class ="resize" src="/static/images/spisbig.png" alt="spis logo">
+            <img class ="resize" src="/static/images/spis4.png" alt="spis logo">
         </header>
         <main>
             <h1>A place to store all your culinary expertise</h1>
             <p>Recipe Joy In Every Bite.</p>
+            <img src="/static/images/food-pyramid.png" alt="food pyramid" class="right">
         </main>
     </div>
       <div class="container">{% block content%} {% endblock %}</div>
@@ -86,6 +87,8 @@
             crossorigin="anonymous"
           ></script>
     >
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/c4276bd6-0cae-4e90-9933-d4b37b72c8c6/webchat/v2.1/config.js"></script>
       <script
         type="text/javascript"
         src="{{ url_for('static', filename='index.js') }}"
